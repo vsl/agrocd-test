@@ -10,6 +10,8 @@ spec:
       app: nginx
   template:
     metadata:
+      annotations:
+        argocd.argoproj.io/sync-options: Force=true,Replace=true
       labels:
         app: nginx
     spec:

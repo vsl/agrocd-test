@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web-deployment-v2
+  labels:
+    test: 1
   annotations:
     argocd.argoproj.io/sync-options: Force=true,Replace=true
 spec:
